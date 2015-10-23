@@ -26,8 +26,8 @@
   </target>
  
   <target name="compile" depends="init" description="compile">
-    <javac srcdir="${src}" destdir="${build}/main" classpathref="classpath.test"/>
-    <javac srcdir="${test}" destdir="${build}/test" classpathref="classpath.test"/>
+    <javac includeantruntime="false" srcdir="${src}" destdir="${build}/main" classpathref="classpath.test"/>
+    <javac includeantruntime="false" srcdir="${test}" destdir="${build}/test" classpathref="classpath.test"/>
   </target>
  
   <target name="dist" depends="compile">
