@@ -1,2 +1,2 @@
 language: java
-after_success: ./mergescrit.sh
+after_success: ./merge.sh
